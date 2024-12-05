@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+    <link rel="stylesheet" href="./map.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./first.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="navbar">
+            <div class="logo">Trip<span>Venture</span></div>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Service</a>
+                <a href="#">Blogs</a>
+                <a href="#" class="sign-in">Sign In</a>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h2>Your Travel Service</h2>
+            <h1>Best Escape Choice</h1>
+            <p>Experience the Best in Travel: A Journey Beyond Your Imagination, Where Every Destination Becomes an Unforgettable Adventure.</p>
+        </div>
+    </div>
+    <section class="relative -mt-20">
+        <div class="bg-white text-gray-900 rounded-lg shadow-lg p-6 mx-4 md:mx-12 lg:mx-32 xl:mx-64">
+          <!-- Tabs -->
+          <div class="flex justify-start mb-6 gap-0">
+            <button class="bg-gray-200 text-gray-900 px-4 py-2 rounded-tl-lg rounded-bl-lg">Flight</button>
+            <button class="bg-gray-100 text-gray-900 px-4 py-2 -ml-1 rounded-tr-lg rounded-br-lg">Hotel</button>
+          </div>
+          
+      
+          <!-- Form Row -->
+          <div class="flex flex-wrap items-start gap-4">
+            <!-- From -->
+            <div class="flex-1 min-w-[200px]">
+              <label class="block text-sm font-medium mb-2">From</label>
+              <input
+                class="w-full border border-gray-300 rounded px-4 py-2"
+                type="text"
+                value="Jakarta"
+              />
+              <p class="text-xs text-gray-500 mt-1">CGK, South Asia, Indonesia</p>
+            </div>
+            <!-- To -->
+            <div class="flex-1 min-w-[200px]">
+              <label class="block text-sm font-medium mb-2">To</label>
+              <input
+                class="w-full border border-gray-300 rounded px-4 py-2"
+                type="text"
+                value="Hanoi"
+              />
+              <p class="text-xs text-gray-500 mt-1">Noi Bai International Airport</p>
+            </div>
+            <!-- Flight Date -->
+            <div class="flex-1 min-w-[200px]">
+              <label class="block text-sm font-medium mb-2">Flight Date</label>
+              <input
+                class="w-full border border-gray-300 rounded px-4 py-2"
+                type="text"
+                value="Fri, 29 Aug"
+              />
+              <p class="text-xs text-gray-500 mt-1">2024</p>
+            </div>
+            <!-- Seat -->
+            <div class="flex-1 min-w-[200px]">
+              <label class="block text-sm font-medium mb-2">Seat</label>
+              <input
+                class="w-full border border-gray-300 rounded px-4 py-2"
+                type="text"
+                value="1 Passengers"
+              />
+            </div>
+            <!-- Search Button -->
+            <div class="min-w-[200px]">
+              <button class="bg-orange-500 text-white w-full py-2 px-4 rounded mt-[30px]">Search Flight</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <div class="" style="display: flex; gap: 20px; margin: 20px auto; margin-left: 10rem; margin-right: 3rem; margin-top:3rem;">
+        <!-- Card 1 -->
+        <div style="background-color: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin: 0 1.5rem; overflow: hidden; width: 320px; position: relative;">
+            <img
+                alt="A traveler walking on a bike lane in a city with tall buildings"
+                style="width: 100%; height: 240px; object-fit: cover;"
+                src="https://storage.googleapis.com/a1aa/image/f8v2aGMh8u2tESYRCdJvJUc3ggGo46nXesiBAXrEce0hdjonA.jpg"
+            />
+            <div style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.5); padding: 1rem; display: flex; align-items: center; color: white;">
+                <i class="fas fa-map-marker-alt" style="font-size: 1.125rem;"></i>
+                <span style="font-size: 0.875rem; font-weight: 500; margin-left: 0.5rem;">Explore Cityscapes</span>
+            </div>
+        </div>
+      
+        <!-- Card 2 -->
+        <div style="background-color: #fb923c; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin: 0 5rem; overflow: hidden; width: 320px; padding: 1.5rem; color: white;">
+            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                <i class="fas fa-calendar-check" style="font-size: 1.5rem;"></i>
+                <span style="font-weight: 600; font-size: 1.25rem; margin-left: 0.5rem;">RSVP To Linkups</span>
+            </div>
+            <p style="font-size: 0.875rem;">
+                Experience the Best in Travel: A Journey Beyond Your Imagination, Where Every Destination Becomes an Unforgettable Adventure.
+            </p>
+        </div>
+      
+        <!-- Card 3 -->
+        <div style="background-color: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); overflow: hidden; width: 320px; position: relative;">
+            <img
+                alt="A cozy wooden hostel room with an open door"
+                style="width: 100%; height: 240px; object-fit: cover;"
+                src="https://storage.googleapis.com/a1aa/image/GpQY43jUszbXERnLEWPOIw6pOmN8AxhmMZCVbpopBEwrbE9E.jpg"
+            />
+            <div style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.5); padding: 1rem; display: flex; align-items: center; color: white;">
+                <i class="fas fa-bed" style="font-size: 1.125rem;"></i>
+                <span style="font-size: 0.875rem; font-weight: 500; margin-left: 0.5rem;">Comfortable Stays</span>
+            </div>
+        </div>
+    </div>
+    
+   <!-- Neelesh  -->
+        <div class="Network">
+            <div class="Expand_side">
+                <div class="upper_Ex_S">
+                    <p class="our_features">Our Features</p>
+                    <h1 class="Expand_your_Network">Expand Your Network</h1>
+                </div>
+                <div class="down_Ex_S">
+                    <div class="Ern">
+                        <div class="Ern_right">
+                            <div class="Ern_containt">Earn 2X points on TripVenture app</div>
+                            <p>Book now and earn double points in all your travels</p>
+                        </div>
+                        <div class="Ern_left">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3236/3236907.png" width="60px" alt="">
+                        </div>
+                    </div>
+                    <div class="get_main">
+                        <div class="get">
+                            <div class="Ern_right">
+                                <div class="Ern_containt">Get Insider Prices Only for You</div>
+                                <p>Unlock exclusive deals and save big with special prices!</p>
+                            </div>
+                            <div class="Ern_left">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3236/3236907.png" width="60px" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="get_12k">
+                            <h1>12k</h1>
+                            <p>Traveller </p>
+                            <p></p>users</p>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="Expand_side_right">
+                <div class="Expand_side_right_1">
+                    <img src="./phone.jpg" height="650px" width="380px" alt="">
+                 
+                </div>
+                <div class="Expand_side_right_2">
+                    <div class="Expand_side_right_2_up">
+                        <p> Experience the Best in Travel: A
+                            Journey Beyond Your Imagination,
+                            Where Every Destination Becomes an Unforgettable Adventure.</p>
+                        <button><pre>  Search Flight   &#x2799; </pre></button>
+                    </div>
+                    <div class="Expand_side_right_2_down"></div>
+    
+                </div>
+            </div>
+        </div>
+    
+        <div class="About">
+            <div class="Join">
+                <h2>73K+</h2>
+                <p>Join the millions who trust us for their travel plans. Our platform has successfully handled over 1 million bookings.</p>
+            </div>
+            <div class="Join"><h2>99%</h2>
+                <p>Our customers love us! With a 95% satisfaction rate, we pride ourselves on providing exceptional service</p></div>
+            <div class="Join J_l"><h2>1200+</h2>
+                <p>Explore the world with us! We offer travel packages to over 200 destinations, giving you a wide range of options/</p></div>
+        </div>
+    
+
+<!-- prashant -->
+    <div class="main">
+        <div class="price">
+            <p class="ourFeature">Our Features</p>
+            <p class="offer">Get The Best<br>Price Offer Here</p>
+            <p class="A_Journey">Find unbeatable deals and save more on your travels with our best<br>price offers!
+                Where Destination Becomes on Unforgettable <br>Adventure Experience the Best in Travel: A Journey</p>
+            <br>
+            <button class="btn">Explore More <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <!-- ****************************************************************************** -->
+        <form action="" class="form">
+            <div class="first">
+                <p>All Airlines <i class="fa-solid fa-chevron-up fa-flip-vertical" style="font-size: 12px;"></i> </p>
+                <p class="one">One-Way <i class="fa-solid fa-chevron-up fa-flip-vertical" style="font-size: 12px;"></i>
+                </p>
+            </div>
+            <br>
+            <div class="from1">
+                <i class="fa-solid fa-plane-departure"></i>
+                <label for="From" class="start">From</label>
+                <input type="text" id="From" name="From" class="input_from">
+            </div>
+            <br>
+            <div class="from2">
+                <i class="fa-solid fa-plane-departure"></i>
+                <label for="To" class="start">To</label><br>
+                <input type="text" id="To" name="To" class="input_To">
+            </div>
+            <br>
+            <div class="third">
+
+                <div class="left">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <label for="Flight" style="color: gray;">Flight Date</label>
+                    <p>Fri, 29 Aug</p>
+                    <p style="font-size: 16px; color: gray;">2024</p>
+                </div>
+                <div class="right">
+                    <span>&#128186;</span>
+                    <label for="Seat" style="color: gray;">Seat</label>
+                    <p>1 Passengers</p>
+                    <p style="font-size: 16px; color: gray;">Economy</p>
+                </div>
+            </div>
+            <div class="btn2">
+                <button class="search">Search Flight <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </form>
+
+    </div>
+    <!-- *************************************************************** -->
+    <div class="logos">
+        <p>AS SEEN ON</p>
+        <div class="all">
+            <img src="./america.png" alt="logo1" class="logo">
+            <img src="./qatar.png" alt="logo2" class="logo2">
+            <img src="./singapore.png" alt="logo3" class="logo">
+            <img src="./garuda.png" alt="logo4" class="logo">
+            <img src="./lufthansa.png" alt="logo5" class="logo">
+
+        </div>
+    </div>
+    <!-- ****************************************************************** -->
+
+    <div class="second-page">
+        <div class="text">
+            <div class="left1">
+                <p class="ourFeature ">Our Features</p>
+                <p class="offer of2">What They<br>Say About Us</p>
+            </div>
+
+            <div class="right1">
+                <p><i class="fa-solid fa-star"></i><span> Trustpilot</span></p>
+                <p class="ex">Excellent <span class="rate"><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></p>
+
+                <div class="score">
+                    <p>Trustscore 4.7 </p>
+                    <i class="fa-solid fa-window-minimize fa-rotate-90"></i>
+                    <p>2.098 Reviews</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-2">
+            <div class="image"> </div>
+
+            <div class="image-2">
+
+                <div class="reviews">
+                    <p>(1/2098) Reviews</p>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>4.7/5.0</span>
+                    </span>
+                </div>
+                <br>
+                <div class="esther">
+                    <span class="double-queto">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </span>
+                    <p>Booking flights has never been easier! I love how <br>intuitive and user-friendly this websiteis.
+                        Saved so <br> much time and hassle booking my last-minute flight.
+                        <br> Highly recommend!""
+                    </p>
+                    <br>
+                    <h4>Esther Howard</h4>
+                    <p>World Traveller, USA</p>
+                </div>
+            </div>
+            <div class="arrow">
+                <span class="larrow">
+                    <i class="fa-regular fa-circle-left"></i>
+                </span>
+                <span class="rarrow">
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex  flex-col ml-10 md:flex-row mx-auto mt-20 items-center justify-between w-full max-w-8xl p-6 bg-white  rounded-lg">
+        <div class="text-center md:text-left mx-auto">
+            <h1 class="text-6xl md:text-6xl max-w-3xl font-bold text-gray-900">Let's Enjoy Your <span class="mt-2">Journey with Us</span> </h1>
+            <div class="mt-4 space-x-4 text-gray-600">
+                <span>[ Instagram ]</span>
+                <span>[ Twitter X ]</span>
+                <span>[ Linkedin ]</span>
+                <span>[ Youtube ]</span>
+            </div>
+        </div>
+        <div class="mt-6 md:mt-0 text-left mx-20 mt-5 ">
+            <p class="text-gray-600 max-w-2xl mb-4  w-full md:w-1/2">
+              Experience the Best in Travel: A Journey Beyond Your Imagination, Where Every Destination Becomes
+            </p>
+            <button class="bg-orange-500 text-white mt-5 px-6 py-2 rounded-full flex items-center justify-center">
+              Join Us Now <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+            <div class="mt-4 flex items-center text-gray-600">
+              <i class="fas fa-envelope mr-2"></i>
+              <span>Hellototravel@tripventure.com</span>
+            </div>
+          </div>
+          
+    </div>
+    <div class="container mx-auto py-8 mt-20">
+        <div class="flex w-100 justify-between items-center">
+            <div class="text-6xl font-bold">
+                <span class="text-orange-500 md:text-8xl">Trip</span><span class="text-black md:text-8xl">Venture</span><span class="text-purple-800 text-4xl mb-4"></span>
+            </div>
+        </div>
+        <div class="mt-4 border-t border-gray-300 pt-4 flex justify-between items-center">
+            <div class="text-gray-600">
+                @copyright 2024, Tripventure All Rights Reserved
+            </div>
+            <div class="flex space-x-8 text-gray-600">
+                <a href="#" class="hover:text-black">Home</a>
+                <a href="#" class="hover:text-black">About Us</a>
+                <a href="#" class="hover:text-black">Service</a>
+                <a href="#" class="hover:text-black">Blogs</a>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+
+</html>
